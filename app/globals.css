@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+* {
+  font-family: "Poppins", Helvetica, sans-serif;
+  @apply overflow-x-clip
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+/* }
+.slash {
+  background-size: cover;
+  background-position: center center;
+  z-index: 10;
+  position: relative;
+}
+.slash::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+  @apply bg-lightBlue
+} */
+.line {
+  position: relative;
+}
+.line::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  content: "";
+  height: 5px;
+  @apply bg-lightBlue
+}
+/* /* .scroller::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroller {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+} 
