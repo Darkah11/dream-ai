@@ -66,7 +66,7 @@ export default function Home() {
       body: " Evolution just dropped a wild new update! 😂 Witness the rare dog-turtle hybrid casually strolling the beach like it’s the most normal thing ever. Is it a fast turtle or a slow dog? Science may never know. 🌊🤣 #TurtleDog #EvolutionGlitch #BeachBeast",
     },
     {
-      url: "/vid-10.MP4",
+      url: "/vid-10.mp4",
       title: " It Wasn't Me: Political Remix 🎤😂",
       img: "/pic-10.png",
       body: "Trump and Putin? They’re not just world leaders—they’re karaoke stars too! 🎶 Watch as they belt out a remix of 'It Wasn’t Me,' but with a twist: it’s all about Trump’s epic blunders. From questionable decisions to hilarious mishaps, this is a musical roast you won’t want to miss! 😂🔥 #ItWasntMe #TrumpRemix #PoliticalKaraoke",
