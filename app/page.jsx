@@ -132,9 +132,10 @@ export default function Home() {
           alt=""
           className="absolute hero-bg top-0 left-0 -z-10 w-full h-full object-cover origin-bottom-left -skew-y-[4deg] "
         />
-        <audio id="audio" loop autoPlay>
+        <audio id="audio" loop autoPlay className=" hidden md:block">
           <source src="/ai.mp3" type="audio/mpeg" />
         </audio>
+
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
@@ -151,17 +152,20 @@ export default function Home() {
               isn’t just another AI coin
             </p>
             <div className=" flex gap-3 justify-center md:justify-start items-center mt-5">
-              <Link href={"https://t.me/+ulCbxLsPcuMzNTA0"}>
+              <Link href={"https://t.me/MemeDreamAi"}>
                 <button className=" w-[150px] md:w-[180px] border hover:bg-transparent hover:text-deepBlue border-deepBlue bg-deepBlue py-2 rounded-lg text-white font-semibold">
                   Join Telegram
                 </button>
               </Link>
-              <Link href={"https://x.com/DreamAI0"}>
+              <Link href={"https://x.com/DreamAiOfficial"}>
                 <button className=" w-[150px] md:w-[180px] hover:bg-transparent border border-lightBlue hover:text-lightBlue bg-lightBlue py-2 rounded-lg text-black font-semibold">
                   Join X
                 </button>
               </Link>
             </div>
+            <audio id="audio" controls className=" md:hidden mx-auto mt-3" >
+              <source src="/ai.mp3" type="audio/mpeg" />
+            </audio>
           </div>
           <div>
             <img src="cheers.png" alt="" />
@@ -218,11 +222,9 @@ export default function Home() {
             Gallery
           </h2>
           <div className=" relative">
-            <div
-              className=" flex justify-between absolute z-30 w-full top-0 bottom-0 m-auto px-5"
-            >
+            <div className=" flex justify-between absolute z-30 w-full top-0 bottom-0 m-auto px-5">
               <button
-              onClick={() => handleScroll(-340)}
+                onClick={() => handleScroll(-340)}
                 style={{ cursor: "pointer" }}
               >
                 <img src="/prev.png" alt="" className=" w-10 h-10 opacity-80" />
@@ -234,7 +236,10 @@ export default function Home() {
                 <img src="/next.png" alt="" className=" w-10 h-10 opacity-80" />
               </button>
             </div>
-            <div ref={ref} className=" flex flex-row shrink-0  gap-5 items-cente overflow-x-auto scroller mt-5 ml-2">
+            <div
+              ref={ref}
+              className=" flex flex-row shrink-0  gap-5 items-cente overflow-x-auto scroller mt-5 ml-2"
+            >
               {data.map((item, index) => {
                 return (
                   <div
@@ -347,10 +352,10 @@ export default function Home() {
             </p>
           </div>
           <div className=" flex items-center gap-3 mt-5">
-            <Link href={"https://t.me/+ulCbxLsPcuMzNTA0"}>
+            <Link href={"https://t.me/MemeDreamAi"}>
               <img src="/telegram.png" alt="" className=" hover:w-10" />
             </Link>
-            <Link href={"https://x.com/DreamAI0"}>
+            <Link href={"https://x.com/DreamAiOfficial"}>
               <img src="/x.png" alt="" className=" hover:w-10" />
             </Link>
           </div>
@@ -360,5 +365,6 @@ export default function Home() {
         </motion.div>
       </footer>
     </>
+
   );
 }
